@@ -1,0 +1,93 @@
+html {
+  /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+/* 라이브러리 */
+.con {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-grid > * {
+  box-sizing: border-box;
+}
+.width-25p {
+  width: 25%;
+}
+
+.img-box > img {
+  width: 100%;
+  display: block;
+}
+
+/* 커스텀 */
+html {
+  overflow-x: hidden;
+}
+
+.con {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+@media (max-width: 1220px) {
+  .con {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.floor-info-box > ul > li {
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.floor-info-box > ul {
+  margin: 0 -10px;
+}
+
+.floor-info-box > ul > li > div > .img-box {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.floor-info-box > ul > li > div > .img-box::after {
+  content: "";
+  display: block;
+  padding-top: 180%;
+}
+
+@media (max-width: 1024px) {
+  .floor-info-box > ul > li {
+    width: 50%;
+  }
+
+  .floor-info-box > ul > li > div > .img-box::after {
+    padding-top: 73.8095%;
+  }
+}
+
+@media (max-width: 768px) {
+  .floor-info-box > ul > li {
+    width: 100%;
+  }
+}
