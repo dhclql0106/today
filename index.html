@@ -19,6 +19,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     />
+    <!-- 스와이퍼 불러오기-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- 테일윈드 불러오기-->
     <link
       rel="stylesheet"
@@ -38,53 +44,475 @@
     />
   </head>
   <body>
+    <!-- 탑바연습
+    <div class="top-bar con-min-width">
+      <div class="con flex flex-ai-c">
+        <a href="#" class="logo logo-1 flex flex-ai-c">
+          <img
+            src="https://www.restaurantoneul.com/images/common/logo_on.png"
+            alt=""
+          />
+        </a>
+        <a href="#" class="logo logo-2 flex flex-ai-c">
+          <img
+            src="https://www.restaurantoneul.com/images/common/logo.png"
+            alt=""
+          />
+        </a>
+        <div class="menu-box-1">
+          <ul class="flex flex-jc-c">
+            <li>
+              <a href="#" class="flex flex-ai-c height-100p">o’neul</a>
+            </li>
+            <li>
+              <a href="#" class="flex flex-ai-c height-100p">Menu</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#">Luncheon</a>
+                </li>
+                <li>
+                  <a href="#">Dinner</a>
+                </li>
+                <li>
+                  <a href="#">Wedding/Party</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="flex flex-ai-c height-100p">People</a>
+            </li>
+            <li>
+              <a href="#" class="flex flex-ai-c height-100p">Room</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#">Reception</a>
+                </li>
+                <li>
+                  <a href="#">Private Dining Room</a>
+                </li>
+                <li>
+                  <a href="#">Hall</a>
+                </li>
+                <li>
+                  <a href="#">Wedding / Party</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="flex flex-ai-c height-100p">Social</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-right">
+          <a href="#" class="btn-allMenu">
+            <i class="icon-menu">
+              <img
+                src="https://www.restaurantoneul.com/images/common/icon_menu_main.png"
+                alt=""
+              />
+            </i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="img-box">
+        <img
+          src="https://www.restaurantoneul.com/images/main/visual02.jpg?v=1"
+          alt=""
+        />
+      </div>
+    </div>
+
+-->
+
     <section class="section-floor-info">
       <div class="con">
         <div class="floor-info-box">
           <ul class="flex-grid">
-            <li class="width-25p">
-              <div>
+            <li class="width-25p active">
+              <div class="on-media-width-big-visible">
                 <div
                   class="img-box"
                   style="
                     background-image: url(https://www.restaurantoneul.com/images/main/mh_img01_bg.jpg);
                   "
                 ></div>
+                <div class="txt-box">
+                  <div class="floor">1F</div>
+                  <div class="des">Reception</div>
+                </div>
+
+                <div
+                  class="slider-box-1 slider-box-1-1 height-full autoplay-started"
+                >
+                  <!-- Slider main container -->
+                  <div class="swiper-container height-full">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <div
+                          class="img-box"
+                          style="
+                            background-image: url(https://www.restaurantoneul.com/images/main/mh_img01.jpg);
+                          "
+                        ></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="img-box"
+                          style="
+                            background-image: url(https://www.restaurantoneul.com/images/main/room01_01.jpg);
+                          "
+                        ></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="img-box"
+                          style="
+                            background-image: url(https://www.restaurantoneul.com/images/main/room01_02.jpg);
+                          "
+                        ></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="img-box"
+                          style="
+                            background-image: url(https://www.restaurantoneul.com/images/main/room01_03.jpg);
+                          "
+                        ></div>
+                      </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="slider-box-1__content-box">
+                      <div>
+                        <div class="floor">1F</div>
+
+                        <div class="des">Reception</div>
+
+                        <div class="des2">
+                          레스토랑 오늘에서 고객을 맞이하는 공간
+                        </div>
+
+                        <div class="flex justify-center">
+                          <div class="swiper-pagination"></div>
+                          <div>
+                            <span class="slider-box-1__btn-resume">▶</span>
+                            <span class="slider-box-1__btn-pause">∥</span>
+                          </div>
+                        </div>
+                        <div class="slider-box-1__btn-more">
+                          <span>more</span>
+                          <span>→</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="on-media-width-small-visible">
+                <div
+                  class="img-box"
+                  style="
+                    background-image: url(https://www.restaurantoneul.com/images/main/mh_img01.jpg);
+                  "
+                ></div>
+                <div class="txt-box">
+                  <div class="floor">1F</div>
+                  <div class="des">Reception</div>
+                </div>
               </div>
             </li>
             <li class="width-25p">
-              <div>
+              <div class="on-media-width-big-visible">
                 <div
                   class="img-box"
                   style="
                     background-image: url(https://www.restaurantoneul.com/images/main/mh_img02_bg.jpg);
                   "
                 ></div>
+                <div class="txt-box">
+                  <div class="floor">2F</div>
+                  <div class="des">Private Dining Room</div>
+                </div>
+                <div
+                  class="slider-box-1 slider-box-1-2 height-full autoplay-started"
+                >
+                  <!-- Slider main container -->
+                  <div class="swiper-container height-full">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <div
+                          class="img-box"
+                          style="
+                            background-image: url(https://www.restaurantoneul.com/images/main/mh_img02.jpg);
+                          "
+                        ></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="img-box"
+                          style="
+                            background-image: url(https://www.restaurantoneul.com/images/main/room02_01.jpg);
+                          "
+                        ></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="img-box"
+                          style="
+                            background-image: url(https://www.restaurantoneul.com/images/main/room02_02.jpg);
+                          "
+                        ></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="img-box"
+                          style="
+                            background-image: url(https://www.restaurantoneul.com/images/main/room02_03.jpg);
+                          "
+                        ></div>
+                      </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="slider-box-1__content-box">
+                      <div>
+                        <div class="floor">2F</div>
+
+                        <div class="des">Private Dining Room</div>
+
+                        <div class="des2">
+                          편안하고 조용하게 다이닝을 즐길 수 있는 6개의 프라이빗
+                          다이닝룸
+                        </div>
+
+                        <div class="flex justify-center">
+                          <div class="swiper-pagination"></div>
+                          <div>
+                            <span class="slider-box-1__btn-resume">▶</span>
+                            <span class="slider-box-1__btn-pause">∥</span>
+                          </div>
+                        </div>
+                        <div class="slider-box-1__btn-more">
+                          <span>more</span>
+                          <span>→</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="on-media-width-small-visible">
+                <div
+                  class="img-box"
+                  style="
+                    background-image: url(https://www.restaurantoneul.com/images/main/mh_img02.jpg);
+                  "
+                ></div>
+                <div class="txt-box">
+                  <div class="floor">2F</div>
+                  <div class="des">Private Dining Room</div>
+                </div>
               </div>
             </li>
             <li class="width-25p">
-              <div>
+              <div class="on-media-width-big-visible">
                 <div
                   class="img-box"
                   style="
                     background-image: url(https://www.restaurantoneul.com/images/main/mh_img03_bg.jpg);
                   "
                 ></div>
+                <div class="txt-box">
+                  <div class="floor">3F</div>
+                  <div class="des">Hall</div>
+                </div>
+                <div
+                  class="slider-box-1 slider-box-1-3 height-full autoplay-started"
+                >
+                  <!-- Slider main container -->
+                  <div class="swiper-container height-full">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <div
+                          class="img-box"
+                          style="
+                            background-image: url(https://www.restaurantoneul.com/images/main/mh_img03.jpg);
+                          "
+                        ></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="img-box"
+                          style="
+                            background-image: url(https://www.restaurantoneul.com/images/main/room03_01.jpg);
+                          "
+                        ></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="img-box"
+                          style="
+                            background-image: url(https://www.restaurantoneul.com/images/main/room03_02.jpg);
+                          "
+                        ></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="img-box"
+                          style="
+                            background-image: url(https://www.restaurantoneul.com/images/main/room03_03.jpg);
+                          "
+                        ></div>
+                      </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="slider-box-1__content-box">
+                      <div>
+                        <div class="floor">3F</div>
+
+                        <div class="des">Hall</div>
+
+                        <div class="des2">
+                          레스토랑 오늘 3층은 야외 중정을 사이에 두고<br />
+                          2가지 스타일의 다이닝 홀이 있습니다.
+                        </div>
+
+                        <div class="flex justify-center">
+                          <div class="swiper-pagination"></div>
+                          <div>
+                            <span class="slider-box-1__btn-resume">▶</span>
+                            <span class="slider-box-1__btn-pause">∥</span>
+                          </div>
+                        </div>
+                        <div class="slider-box-1__btn-more">
+                          <span>more</span>
+                          <span>→</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="on-media-width-small-visible">
+                <div
+                  class="img-box"
+                  style="
+                    background-image: url(https://www.restaurantoneul.com/images/main/mh_img03.jpg);
+                  "
+                ></div>
+                <div class="txt-box">
+                  <div class="floor">3F</div>
+                  <div class="des">Hall</div>
+                </div>
               </div>
             </li>
             <li class="width-25p">
-              <div>
+              <div class="on-media-width-big-visible">
                 <div
                   class="img-box"
                   style="
                     background-image: url(https://www.restaurantoneul.com/images/main/mh_img04_bg.jpg);
                   "
                 ></div>
+                <div class="txt-box">
+                  <div class="floor">Banquet/Party</div>
+                  <div class="des">Dining events</div>
+                </div>
+
+                <div
+                  class="slider-box-1 slider-box-1-4 height-full autoplay-started"
+                >
+                  <!-- Slider main container -->
+                  <div class="swiper-container height-full">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <div
+                          class="img-box"
+                          style="
+                            background-image: url(https://www.restaurantoneul.com/images/main/mh_img04.jpg);
+                          "
+                        ></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="img-box"
+                          style="
+                            background-image: url(https://www.restaurantoneul.com/images/main/room04_01.jpg);
+                          "
+                        ></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="img-box"
+                          style="
+                            background-image: url(https://www.restaurantoneul.com/images/main/room04_02.jpg);
+                          "
+                        ></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="img-box"
+                          style="
+                            background-image: url(https://www.restaurantoneul.com/images/main/room04_03.jpg);
+                          "
+                        ></div>
+                      </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="slider-box-1__content-box">
+                      <div>
+                        <div class="floor">Banquet/Party</div>
+
+                        <div class="des">Dining events</div>
+
+                        <div class="des2">
+                          전통과 모던함이 어우러진 레스토랑 오늘에서<br />
+                          이벤트 컨셉에 따라 공간을 다양하게 활용하여 이벤트
+                          다이닝을 즐길 수 있습니다.
+                        </div>
+
+                        <div class="flex justify-center">
+                          <div class="swiper-pagination"></div>
+                          <div>
+                            <span class="slider-box-1__btn-resume">▶</span>
+                            <span class="slider-box-1__btn-pause">∥</span>
+                          </div>
+                        </div>
+                        <div class="slider-box-1__btn-more">
+                          <span>more</span>
+                          <span>→</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="on-media-width-small-visible">
+                <div
+                  class="img-box"
+                  style="
+                    background-image: url(https://www.restaurantoneul.com/images/main/mh_img04.jpg);
+                  "
+                ></div>
+                <div class="txt-box">
+                  <div class="floor">Banquet/Party</div>
+                  <div class="des">Dining events</div>
+                </div>
               </div>
             </li>
           </ul>
         </div>
       </div>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>
